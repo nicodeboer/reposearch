@@ -1,0 +1,19 @@
+{
+  "name": "diverse-it/reposearch",
+  "description": "Searching public repositories on Gitlab, Github and/or Bitbucket",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Nico de Boer",
+      "email": "nico@diverse-it.nl"
+    }
+  ],
+  "require": {
+    "monolog/monolog": "1.0.*",
+    "vlucas/phpdotenv": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {"DIV\\": "src/"}
+  }
+}
