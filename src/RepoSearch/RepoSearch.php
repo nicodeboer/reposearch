@@ -4,7 +4,13 @@ namespace reposearch\RepoSearch;
 
 use reposearch\RepoSearch\Repositories\AbstractRepository;
 
-class Search
+/**
+ * Repository search class
+ *
+ * Class RepoSearch
+ * @package reposearch\RepoSearch
+ */
+class RepoSearch
 {
     protected array $repositories = [];
 
@@ -13,6 +19,13 @@ class Search
         $this->repositories[] = $repository;
     }
 
+    /**
+     * Actual search in the configured repositories.
+     * @todo:
+     *
+     * @param string $query
+     * @return array
+     */
     public function search(string $query): array
     {
         $result = [];

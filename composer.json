@@ -1,8 +1,9 @@
 {
-  "name": "diverse-it/reposearch",
+  "name": "reposearch/reposearch",
   "description": "Searching public repositories on Gitlab, Github and/or Bitbucket",
-  "minimum-stability": "stable",
-  "license": "proprietary",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
   "authors": [
     {
       "name": "Nico de Boer",
@@ -10,10 +11,15 @@
     }
   ],
   "require": {
-    "monolog/monolog": "1.0.*",
+    "php": "^7.4",
     "vlucas/phpdotenv": "^5.2"
   },
   "autoload": {
-    "psr-4": {"DIV\\": "src/"}
+    "psr-4": {
+      "reposearch\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
   }
 }

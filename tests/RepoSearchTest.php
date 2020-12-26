@@ -3,12 +3,13 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
+use reposearch\RepoSearch\RepoSearch;
 
 class RepoSearchTest extends TestCase
 {
-    public function testGet()
+    public function testSearch()
     {
-        $response = $this->get('/');
-        $response->assertStatus(200);
+        $search = new RepoSearch();
+        $this->assertEquals([], $search->search('foobar'));
     }
 }

@@ -1,8 +1,6 @@
 <?php
 
-
-namespace reposearch\ApiHandlers;
-
+namespace reposearch\ApiRequest;
 
 interface ApiHandlerInterface
 {

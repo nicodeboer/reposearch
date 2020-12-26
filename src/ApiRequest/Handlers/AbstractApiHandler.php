@@ -1,10 +1,8 @@
 <?php
 
+namespace reposearch\ApiRequest;
 
-namespace reposearch\ApiHandlers;
-
-
-class AbstractApiHandler
+class AbstractApiHandler implements ApiHandlerInterface
 {
 
 }
