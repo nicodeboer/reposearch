@@ -1,4 +1,4 @@
-#Repository search
+# Repository search
 
 Author: Nico de Boer
 
@@ -8,7 +8,7 @@ Repo search is a simple RESTful API handler / proxy for searching in public repo
 
 Built in PHP with usage of version 7.4 and composer.
 
-##Setup
+## Setup
 
 Clone or download the repository en run 'composer install' to download the depency packages.
 
@@ -16,13 +16,13 @@ Then make a copy of the .env.example file to '.env' and fill the needed configur
 
 All incoming traffic should then be redirected to index.php by webserver configuration. Or run the API server with the PHP built in webserver with 'php -S localhost:8000' (or any other available port).
 
-##Usage
+## Usage
 
 After you have setup the code and server, point your API client to 'http(s)://<url>/v1/search?q=<query>', where <url> is the host you are running the API server and <query> the search query you want to perform.
 
 The search will return a JSON with result from the repositories. For now this is the merged results from the repositories in their own format, so these are not yet made consistent.
 
-##Code layout
+## Code layout
 
 All code can be found in the 'src' folder and consists of three 'sub' packages:
 
