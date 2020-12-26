@@ -32,7 +32,7 @@ class Request
                     $repoSearch = new RepoSearch();
                     $repoSearch->addRepository(new Github());
                     $repoSearch->addRepository(new Gitlab());
-                    return $repoSearch->search($request['query']['q']);
+                    return $repoSearch->search(urlencode($request['query']['q']));
                 } else {
                     throw new \Exception('Invalid request method');
                 }
